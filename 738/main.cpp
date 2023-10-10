@@ -37,11 +37,6 @@ int monotoneIncreasingDigits(int n) {
     }
     num.pop_back(); // 0
 
-    for (auto m = 0; m < num.size(); m++){
-        cout << num[m] << '\t';
-    }
-    cout << endl;
-
     for (int i = 0; i < sub; i++){
         num[i] = 9;
     }
@@ -49,11 +44,6 @@ int monotoneIncreasingDigits(int n) {
     if (sub){
         num[sub] = tmp_s;
     }
-
-    for (auto m = 0; m < num.size(); m++){
-        cout << num[m] << '\t';
-    }
-    cout << endl;
 
     for (int j = cnt-1; j >= 0; j--){
         out += num[j];
